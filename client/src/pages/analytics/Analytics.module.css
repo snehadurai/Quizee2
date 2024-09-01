@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.layout{
+  display: flex;
+  overflow-x: hidden;
+  background-color: #EDEDED;
+}
+
+.analytics {
+  background-color: #EDEDED;
+  padding: 4rem;
+  width: 83%;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  overflow-x: hidden;
+}
+
+.analytics .heading {
+  text-align: center;
+  font-size: 50px;
+  line-height: 75px;
+  color: #5076FF;
+  margin-bottom: 2rem;
+}
+
+.analytics .tableWrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.analytics .tableWrapper table {
+  width: 100%;
+   /* Ensure separate borders for applying radius */
+  border-spacing: 0;
+}
+
+thead {
+  background-color: #5076FF;
+  color: white;
+}
+.analytics .tableWrapper table thead th {
+  padding: 1rem ;
+}
+
+.analytics .tableWrapper table tbody tr:nth-child(odd) {
+  background-color: #EDEDED;
+}
+
+.analytics .tableWrapper table tbody tr:nth-child(even) {
+  background-color: var(--blue-btn);
+}
+
+.analytics .tableWrapper table tbody tr:nth-child(even) td {
+  position: relative; /* Ensure positioning is correct */
+  border-top: 1px solid transparent; /* Prevent overlap issues */
+  border-bottom: 1px solid transparent; /* Prevent overlap issues */
+}
+
+.analytics .tableWrapper table tbody tr:nth-child(even) td:first-child {
+  border-radius: 10px 0 0 10px; /* Bottom-left corner */
+}
+
+.analytics .tableWrapper table tbody tr:nth-child(even) td:last-child {
+  border-radius: 0 10px 10px 0; /* Bottom-right corner */
+}
+
+.analytics .tableWrapper table tbody tr td {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+
+
