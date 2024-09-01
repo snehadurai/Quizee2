@@ -16,7 +16,7 @@ if (!process.env.MONGO_URL) {
 }
 
 app.use(cors({
-    origin: 'http://localhost:5174', // Update this to the URL of your frontend
+    origin: 'https://quizee2.vercel.app', // Update this to the URL of your frontend
     credentials: true, // This is important if you're making requests with credentials (like cookies)
   }));
   
