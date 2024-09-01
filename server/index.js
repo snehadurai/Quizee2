@@ -15,14 +15,14 @@ if (!process.env.MONGO_URL) {
     process.exit(1);
 }
 
-app.use(cors({
-    origin: 'https://quizee2-front.vercel.app', // Update this to the URL of your frontend
-    credentials: true, // This is important if you're making requests with credentials (like cookies)
-  }));
-  
+// app.use(cors({
+//     origin: 'https://quizee2-front.vercel.app', // Update this to the URL of your frontend
+//     credentials: true, // This is important if you're making requests with credentials (like cookies)
+//   }));
+  app.use(cors())
 
 // Explicitly handle OPTIONS requests to avoid CORS preflight issues
-app.options('*', cors());
+// app.options('*', cors());
 
 // Body parsing middleware
 app.use(express.json());
